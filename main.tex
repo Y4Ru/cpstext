@@ -1,0 +1,96 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{scrextend}
+\usepackage{gensymb}
+\title{Master Thesis}
+\author{Marcel Bechtold}
+\date{December 2017}
+
+
+\begin{document}
+
+\maketitle
+
+
+\section{Abstract}
+
+\section{Introduction}
+
+
+\section{Methods}
+
+\subsection{Participants}
+20 (10 female, 10 male; all right-handed) people from the local university community participated in the experiment. Their age ranged from XX to XX years (M = XX, SD = XX). All participants were naive to the purpose of the experiment and had normal or corrected-to-normal vision. The experiment was approved by the ethics committee of the University of T\"ubingen, and was performed in accordance with the Declaration of Helsinki. Participants gave written informed consent prior to the experiment and were compensated with 8 Euro per hour for their participation. 
+
+\subsection{Apparatus}
+The virtual environment was displayed in stereo using an HTC Vive head-mounted-display (HMD) with a resolution of 1080 x 1200 pixels per eye (2160 x 1200 pixels combined). Inter-pupillary distance was measured with a pupilometer and set accoringly on the HTC Vive for each participant. Audio was recorded with a microphone plugged into the integrated audio input of the HTC Vive. Participants were standing during the whole experiment and viewed their virtual task in front of them.
+
+Participants were run in an individual and a collaborative condition in which two participants worked together. Therefore the apparatus consisted of two HTC Vives of which each was connected to its own computer. The computers had the same hardware configuration (list PC specs?). In the individual condition participants were run in their own virtual environment solving a task alone (\ref{fig:individual_condition_setting}). In the collaborative condition two participants were run in a shared virtual environment solving the task together (\ref{fig:collaborative_condition_setting}). The synchronization between the two computers in the collaborative condition was done via UDP. Therefore the participants could collaborate in real time with very little to no delay or lag.
+
+The virtual task consists of cubes and cube slots. The cubes can be picked up by moving the controller into a cube and pressing and holding the trigger button of the controller (there is both no collision between cubes and between cubes and the controller). When a cube is picked up it can be moved and rotated by the controller freely. When the cube is moved to the solution space it  automatically aligns ("snaps in") with the next closest cube slot.
+
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.8\textwidth]{individual_condition_setting.png}
+%\caption{\label{fig:individual_condition_setting} XX.}
+%\end{figure}
+
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.8\textwidth]{collaborative_condition_setting.png}
+%\caption{\label{fig:collaborative_condition_setting} XX.}
+%\end{figure}
+
+
+
+
+\subsection{Task Design}
+% Anne: here needs to be a description of the scene (cubes) and the task (and a picture)
+The task was to solve a rubics cube like problem. Instead of 27 cubes (3x3x3) which need to be rotated in order to find the solution, our solution space consists of four slots filled with four cubes. Similar to the rubics cube problem our problem is solved, when all sides of the entire cube have different colors. Our problem space consists of nine cubes of which only four cubes lead to the solution. The other five cubes are distractor cubes, which are colored in a way that they appear to be part of the solution. At the beginning of the task there is already one cube placed in the correct position (starting cube). The remaining three cubes need to be found and placed into the correct position. Based on the starting cube we define a sequence in which the other three cubes need to be placed into the solution space (See picture). Both when placing and removing a cube the sequence has to be followed - if forward and respectively backward manner. The first cube being placed is always the cube next to the starting cube in the direction of which the participant is facing. The second cube is diagonal of the previous one and the third cube one is trivial, because it is the last cube and there is only one option.
+
+Ideas behind the task design:
+- very controlled: reduce the variation of how participants could solve the task
+- tree like solution path: 
+--four potential ways to traverse the tree in order to get to the solution
+--best case one traversion, worst case four traversions
+--how many traversions participants need is random and not controlled, but it is possible to quantify how close participants were to one certain traversion path and the deviation from that can be defined as the error.
+
+
+\subsection{Procedure}
+%% Anne: below is an example of the procedure section of one of my papers
+%A two-alternative forced choice (2AFC) discrimination task was utilized based on the method of constant stimuli. The same experimental set-up was used as in Experiment 1. On each trial, participants were presented with two bodies standing next to each other and were asked to respond which of the two bodies (left or right) was fatter by pressing buttons on a joystick pad. Each trial started with the presentation of a fixation cross for one second in the middle of the room at the same distance as the bodies were presented. Participants were instructed to fixate on the cross every time it appeared. After the fixation cross disappeared, two bodies were presented for 3 seconds. The exposure of 3 seconds was chosen to give participants enough time to look at both bodies and compare them. Following the presentation of the bodies, a random-noise mask appeared for 1 second. Participants could give a response as soon as the mask appeared by pressing buttons on a joystick pad. After the mask disappeared, the empty virtual room was presented until participants had responded. There was no time-limit placed on their response. The next trial started immediately after a response was given. The experiment consisted of four blocks (BMI 15, 25, 35, and 45). There were 11 body pairings in the BMI 15 and BMI 25 conditions (0 ± 2.5 BMI, in steps of 0.5 BMI) and 15 body pairings in the BMI 35 and BMI 45 conditions (0 ± 3.5 BMI, in steps of 0.5 BMI). Each body pairing was presented 20 times with the reference (original body) being presented 10 times on the left side and 10 times on the right side. The trials order was blocked such that each body pairing was presented twice with the reference once on each side, before being repeated. The order within the trial blocks was randomized. The whole experiment took around 90 minutes to complete. 17 of the participants completed the blocks in ascending order, 19 of the participants in descending order with participants’ BMI approximately  matched across the two groups. Participants had a break between the blocks.
+Participants were invited as a group of two people and did not know each other. In a group session the two participants solved the task on their own in a separate virtual environment and together in the same virtual environment. The sequence of single/collaborative was counter balanced among all groups. In both the single and collaborative condition participants solved 20 tasks of which all had the same design as described above and differed only in color. In the single condition participants viewed the task always from the same perspective, which means that the starting cube was always placed at the same position in the solution space.
+In the collaborative condition we rotated the solution space after 10 trials, which means the starting cube is on one participant's side for the first 10 trials and on the other participant's side for the remaining 10 trials. 
+
+The detailed procedure for the single condition will be explained in the following:
+After having read the instruction of the task participants also received a verbal instruction by the experimenter. 
+
+Then two training trials were run in order to verify that the participant is able to perform the task correctly. 
+
+You highlight that the starting cube cannot be moved and then they have to find the second cube that has a predetermined position and so on. You also highlight that in all trials the top and bottom color remains the same (i.e., top is always white and bottom is always black, only the side colors change)
++forward backward sequence
+
+You instruct them that they are not allowed to move or switch positions
+
+In the individual condition if they cannot see the cube they can grab it, check the color and place it back
+
+Skip to next task when think they are ready. Incorrect tasks are marked by the experimenter.
+
+%what needs to go in here is:
+
+%instructions that were given to the participants
+%training phase (how many trials...)
+%counterbalance single / multi (counterbalanced - 10 each side)
+
+
+\section{Results}
+
+
+
+\section{Discussion}
+
+
+
+\bibliography{references.bib}
+
+\end{document}
