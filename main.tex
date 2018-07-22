@@ -4,10 +4,12 @@
 \usepackage{scrextend}
 \usepackage{gensymb}
 \usepackage{graphicx}
-\graphicspath{ {./img/procedure/}{./img/results/} }
-\title{Master Thesis}
+\usepackage[numbers]{natbib}
+\usepackage{hyperref} 
+\graphicspath{ {./img/procedure/}{./img/results/}{./img/intro/}}
+\title{Spatial problem solving and collaboration in virtual reality}
 \author{Marcel Bechtold}
-\date{July 2018}
+\date{\today}
 
 
 \begin{document}
@@ -20,6 +22,33 @@
 Lorem ipsum
 
 \section{Introduction}
+\paragraph{What is problem solving}
+Problem solving is a meanwhile well established field in cognitive psychology. The literature suggests that different sub processes of problem solving need to be considered in order to understand the whole process. The relevant sub-processes are the perception of the task, understanding the problem, activating foreknowledge, manipulating the given information, dividing the problem into subgoals, developing a plan, detecting errors and finding and validating results. The sub-processes of problem solving can also be investigated separately. Problem solving in general can be defined by the attempt to transition from a given initial state to a goal state. Furthermore it is necessary that there must be some kind of barrier that prevents one from achieving the goal state directly. \cite{muesseler2015allgemeine}
+
+\paragraph{Methods in problem solving research}
+In previous research some common methods of investigating problem solving have been established. The main goal it to identify the cognitive and neuronal processes of problem solving. A popular method is eye tracking because it allows to identify which informations of a problem are being looked at. \cite{underwood2005}  Furthermore neuropsychological studies are used to investigate which brain areas are responsible for certain aspects of problem solving. \cite{Karnath2006} In general there are several tasks which are being used to investigate problem solving in behavioral studies. On example is the nine dot problem. The problem is to connect all nine dots of a 3x3 matrix with four continuous straight lines and without taking the pen of the paper.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{ninedots}
+\caption{Nine dot problem with solution.}
+\label{fig:ninedots}
+\end{figure}
+
+\paragraph{What is spatial problem solving?}
+In contrast to the more general approaches of problem solving described before, this work focuses on spatial problem solving and the question whether two people together perform better than a single person in a spatial problem solving task. 
+Previous work in spatial problem solving has targeted fundamental processes of how individuals apply spatial learning, memory and planning. \cite{Waller2013} There exists also that investigate collaborative learning, but they do not focus on spatial problems. \cite{Dillenbourg1999} \cite{Hesse2015} Therefore the main goal of this work is to combine both spatial and collaborative problem solving.  
+
+\paragraph{Why is spatial problem solving difficult to investigate?}
+\paragraph{Why is virtual reality a good method to investigate spatial problem solving}
+Since it is quite difficult to investigate and measure performance in collaborative spatial problem solving tasks in the real world a new task in virtual reality has been designed for this study. This task has been designed in a way that allows to investigate and compare problem solving performance both in individuals and in groups of two. The main benefit of using virtual reality to investigate spatial problem solving is the fact that the technical equipment allows to easily record data of how participants interact with the virtual environment (e.g. controller movements and rotations). Furthermore in a virtual environment the task, the position of participants and the environmental aspects of the scene can be easily manipulated and controlled. Therefore, virtual reality appears to be a very promising method to investigate collaborative spatial problem solving. 
+\paragraph{Previous research in spatial Problem solving}
+Only very few studies that compare to this approach can be found. One is the study by x + citation
+- only investigate differences in interfaces solving a virtual reality task similar to the one here. It has been shown that head mounted displays are one of the best interfaces to investigate spatial problem solving. Since the technology has rapidly developed since the publication of this paper there are now much better interfaces and computer graphics available in order to create immersive virtual environments that allow interaction with different kinds of user input.
+\paragraph{What is missing in previous research? Detailed performance measures and collaboration}
+ The main goal of this study was to design a task in a virtual environment that enables researchers to investigate problem solving both in individuals and groups of two people and also compare both variations.
+
+\paragraph{What is missing in previous research? Detailed performance measures and collaboration}
 
 
 \section{Methods}
@@ -49,7 +78,7 @@ The virtual task consists of cubes and cube slots. The cubes can be picked up by
 
 
 
-\subsection{Task Design}
+\subsection{Procedure}
 Participants were invited as a group of two people and did not know each other. In one group session the two participants solved the task on their own in a separate virtual environment and together in the same virtual environment. The sequence of single and collaborative was counter balanced among all groups. In both the single and collaborative condition participants solved 20 tasks of which all had the same design as described above and differed only in color. In the single condition participants viewed the task always from the same perspective, which means that the starting cube was always placed at the same position in the solution space.
 In the collaborative condition we rotated the solution space after 10 trials, which means the starting cube is on one participant's side for the first 10 trials and on the other participant's side for the remaining 10 trials. 
 
@@ -67,8 +96,10 @@ The procedure for the collaborative solving of the task was mostly the same. The
 %training phase (how many trials...)
 %counterbalance single / multi (counterbalanced - 10 each side)
 
-\section{Details about the task}
+\section{Task Design}
+Simple vs complex tasks -> why use simple task? why many restrctions? -> controlled
 
+goal of task -> participants must optimize the way they apply the given strategy
 \subsection{Implications for problem solving}
 
 \section{Results}
@@ -99,7 +130,6 @@ The rotation sum of cubes is the sum of rotations made by one participant during
 
 \paragraph{Number of cube snap-outs}
 The number of cube snap-outs it the number of how many times a participant took a cube back out from the problem space during the task duration. Figure \ref{fig:results_snap_outs} shows that groups needed much less snap-outs with an average of 2.1 snap-outs compared to single participants with an average of 4.5 snap-outs. 
-
 Snap-outs can be categorized in two classes: "necessary" and "unnecessary" snap-outs. Necessary snap-outs are the ones which are part of the task design which means participants are supposed to try certain solution paths and if a path was not successful they need to snap-out some cubes and snap-in new ones until they successfully finish the task. It is possible though that participants try the same or similar solution path more than one time and therefore have to do unnecessary snap-outs. For the number of cube snap-outs a smaller value indicates the better performance, because it means that less unnecessary snap-out were made. The average of necessary snap-outs is expected to be equally distributed with an expectancy value of 2.0. In other words scoring an average of 2.0 snap-outs is an indicator of almost perfect performance to which the group condition is very close with 2.1.
 The output of the linear mixed model was F:(1,18.99)=22.112, p < 0.001.
 
@@ -134,14 +164,14 @@ The output of the linear mixed model was F:(1,18.99)=9.338, p < 0.01.
 
 
 \section{Discussion}
-Ideas behind the task design:
+Ideas behind the task design:	
 - very controlled: reduce the variation of how participants could solve the task
 - tree like solution path: 
 --four potential ways to traverse the tree in order to get to the solution
 --best case one traversion, worst case four traversions
 --how many traversions participants need is random and not controlled, but it is possible to quantify how close participants were to one certain traversion path and the deviation from that can be defined as the error.
 
-
-\bibliography{references.bib}
+\bibliographystyle{plainnat}
+\bibliography{references}
 
 \end{document}
