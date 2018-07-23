@@ -21,7 +21,7 @@
 
 Lorem ipsum
 
-\section{Introduction}
+\section{Introduction} \label{sec:introduction}
 \paragraph{What is problem solving}
 Problem solving is a meanwhile well established field in cognitive psychology. The literature suggests that different sub processes of problem solving need to be considered in order to understand the whole process. The relevant sub-processes are the perception of the task, understanding the problem, activating foreknowledge, manipulating the given information, dividing the problem into subgoals, developing a plan, detecting errors and finding and validating results. The sub-processes of problem solving can also be investigated separately. Problem solving in general can be defined by the attempt to transition from a given initial state to a goal state. Furthermore it is necessary that there must be some kind of barrier that prevents one from achieving the goal state directly. \cite{muesseler2015allgemeine}
 
@@ -46,10 +46,38 @@ Since it is quite difficult to investigate and measure performance in collaborat
 Only very few studies that compare to this approach can be found. One is the study by x + citation
 - only investigate differences in interfaces solving a virtual reality task similar to the one here. It has been shown that head mounted displays are one of the best interfaces to investigate spatial problem solving. Since the technology has rapidly developed since the publication of this paper there are now much better interfaces and computer graphics available in order to create immersive virtual environments that allow interaction with different kinds of user input.
 \paragraph{What is missing in previous research? Detailed performance measures and collaboration}
- The main goal of this study was to design a task in a virtual environment that enables researchers to investigate problem solving both in individuals and groups of two people and also compare both variations.
+ The main goal of this study was to design a task in a virtual environment that is suitable to investigate and quantify the performance in problem solving both in individuals and groups of two people and also compare both variations. 
 
 \paragraph{What is missing in previous research? Detailed performance measures and collaboration}
 
+\section{Task Design}
+
+In this section the design and idea behind the task which was used in the experiment will be explained. It is intended to focus on the task design only without considering the virtual reality aspects and and actual procedure which will be described in the methods sections. But is has to be kept in mind that the task is intended to be implemented in a 3D virtual environment which allows participants to almost freely interact and move. The challenge of designing a problem for a spatial problem solving experiment in a virtual 3D space is to find a balance between limiting the options and degrees of freedom participants have, but also allowing them enough possibilities to apply individual strategies within those limitations.
+
+
+\paragraph{Requirement of the task}
+When designing a task (or problem) for a problem solving experiment it is important to think about the complexity of the task. The literature differentiates between simple and complex tasks (problems). A simple task is characterized by having a clear initial  and goal state and all transitions and solution paths are known. Such tasks suit very well to investigate heuristics, search processes and systematic errors in problem solving. The main advantage is that simple tasks can be investigated well in experiments because they can be easily controlled. A complex task is mainly characterized by the fact that it is more closely related to real life problems, which makes them harder to be simulated in an experiment. It is important to understand that a simple task must not necessearily be easy to solve. The adjective "simple" refers only to the fact that the task's rules and its scope are limited to a few actions. The nine dot problem described before (Section \ref{sec:introduction} and Figure \ref{fig:ninedots}) can be categorized as a simple problem, because it is only possible to draw straight lines and it is not allowed to take the pen off the paper. Finding the solution still seems to be very difficult since only 10\% of the participants are able to solve the task. \cite{muesseler2015allgemeine} 
+Since we want to be able to quantify and compare performances of individuals and groups of two, the main requirement for the task  was that is has to be a simple task. However, problem solving tasks in the 3D space are naturally pretty complex, because they allow all kinds of different movements and interactions. In the following the task components and rules will be described in detail in order to clarify its simple nature and also explain why this task is suitable to investigate and compare spatial problem solving for both individuals and groups of two.
+
+\subsection{Task components and goal}
+The components of the task are 10 cubes and a solution space with four slots to hold one cube each. The
+
+\subsection{Task rules}
+Another requirement of the task is, that is must be possible to be solved in a reasonable amount of time 
+
+
+\subsection{Task theory and tree structure}
+restrctions? -> controlled
+
+Ideas behind the task design:	
+- very controlled: reduce the variation of how participants could solve the task
+- tree like solution path: 
+--four potential ways to traverse the tree in order to get to the solution
+--best case one traversion, worst case four traversions
+--how many traversions participants need is random and not controlled, but it is possible to quantify how close participants were to one certain traversion path and the deviation from that can be defined as the error.
+
+goal of task -> participants must optimize the way they apply the given strategy
+\subsection{Implications for problem solving}
 
 \section{Methods}
 
@@ -95,12 +123,6 @@ The procedure for the collaborative solving of the task was mostly the same. The
 %instructions that were given to the participants
 %training phase (how many trials...)
 %counterbalance single / multi (counterbalanced - 10 each side)
-
-\section{Task Design}
-Simple vs complex tasks -> why use simple task? why many restrctions? -> controlled
-
-goal of task -> participants must optimize the way they apply the given strategy
-\subsection{Implications for problem solving}
 
 \section{Results}
 Data analysis was done by applying linear mixed models with the Kenward-Rodger degrees of freedom approximation. The random factors were the group number (= an individual number assigned to each group in the group condition), participant number (= an individual number assigned to each individual participant in the single condition) and the number of players(= either one or two). The only fixed factor was the number of players. 
@@ -164,12 +186,10 @@ The output of the linear mixed model was F:(1,18.99)=9.338, p < 0.01.
 
 
 \section{Discussion}
-Ideas behind the task design:	
-- very controlled: reduce the variation of how participants could solve the task
-- tree like solution path: 
---four potential ways to traverse the tree in order to get to the solution
---best case one traversion, worst case four traversions
---how many traversions participants need is random and not controlled, but it is possible to quantify how close participants were to one certain traversion path and the deviation from that can be defined as the error.
+- 
+- design of the task, which can be used in follow up experiments -> explain variations
+- explain main results -> 2 vs 1 -> costs of working memory vs shared representation and planning
+
 
 \bibliographystyle{plainnat}
 \bibliography{references}
