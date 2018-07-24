@@ -6,7 +6,7 @@
 \usepackage{graphicx}
 \usepackage[numbers]{natbib}
 \usepackage{hyperref} 
-\graphicspath{ {./img/procedure/}{./img/results/}{./img/intro/}}
+\graphicspath{ {./img/procedure/}{./img/results/}{./img/intro/}{./img/task/}}
 \title{Spatial problem solving and collaboration in virtual reality}
 \author{Marcel Bechtold}
 \date{\today}
@@ -60,21 +60,96 @@ When designing a task (or problem) for a problem solving experiment it is import
 Since we want to be able to quantify and compare performances of individuals and groups of two, the main requirement for the task  was that is has to be a simple task. However, problem solving tasks in the 3D space are naturally pretty complex, because they allow all kinds of different movements and interactions. In the following the task components and rules will be described in detail in order to clarify its simple nature and also explain why this task is suitable to investigate and compare spatial problem solving for both individuals and groups of two.
 
 \subsection{Task components and goal}
-The components of the task are 10 cubes and a solution space with four slots to hold one cube each. The
+In this section the task components, the initial state and the goal state will be described.
+The components of the task are 10 cubes and a solution space with 4 slots to hold one cube each. Every cube has a color on each of its 6 faces. The same color can be assigned at most to two faces of a cube. Since the colors vary in each trial a digit coding will be introduced in the following to describe the exact color configurations of all cubes. A color configuration of a cube consists of a mapping of all its faces to a digit code. Every digit code is a placeholder for a certain color. An example coding for one cube could look like this: 
 
-\subsection{Task rules}
-Another requirement of the task is, that is must be possible to be solved in a reasonable amount of time 
+front(f)=1, back(b)=0, left(l)=2, right(r)=0, top(t)=7, bottom(b)=8
+
+The cube faces can have 9 different colors and therefore the digit coding has been defined that ranges from 0 to 8. The 9 different colors are required because the distractor cubes need to be colored with some distractor colors, which are not part of the goal state. Since the resulting cuboid has 6 faces there are six colors which are actually part of the goal state. The other 3 colors are the distractor colors. The complete digit coding for all 9 cubes can be found in Table \ref{tab:digit_coding}.
+
+\begin{table}
+\begin{center}
+    \begin{tabular}{| l | | l | l | l | l | l | l |  l |}
+    \hline
+    Cube & front & back & left & right & top & bottom & type \\ \hline
+    A & 1 & 0 & 2 & 0 & 7 & 8 & starting/solution \\ \hline
+    B & 0 & 3 & 2 & 0 & 7 & 8 & solution \\ \hline
+    C & 0 & 3 & 0 & 4 & 7 & 8 & solution \\ \hline
+    D & 1 & 0 & 0 & 4 & 7 & 8 & solution \\ \hline
+    E & 2 & 0 & 0 & 3 & 7 & 8 & distractor \\ \hline
+    F & 0 & 3 & 0 & 5 & 7 & 8 & distractor \\ \hline
+    G & 0 & 4 & 0 & 5 & 7 & 8 & distractor \\ \hline
+    H & 0 & 3 & 0 & 6 & 7 & 8 & distractor \\ \hline
+    I & 0 & 5 & 1 & 0 & 7 & 8 & distractor \\ \hline
+    \end{tabular}
+\end{center}
+\caption{Digit coding of the color configuration for all cubes.}
+\label{tab:digit_coding}
+\end{table}
+
+After taking a closer look at Table \ref{tab:digit_coding} one can see that 0, 7 and 8 are represented in each cube. This is because we made certain simplifications for the task in order to classify it as a simple problem. The digit 0 is always mapped to gray because we define gray as the faces 
+
+\begin{table}
+\begin{center}
+    \begin{tabular}{| l | l |}
+    \hline
+    Digit code & color \\ \hline
+    0 & gray \\ \hline
+    1 & variable \\ \hline
+    2 & variable \\ \hline
+    3 & variable \\ \hline
+    4 & variable \\ \hline
+    5 & variable \\ \hline
+    6 & variable \\ \hline
+    7 & white \\ \hline
+    8 & black \\ \hline
+    \end{tabular}
+\end{center}
+\caption{Color mapping for digit codes. 0, 7 and 8 are always mapped to gray, black and white are because they do not change between trials. All other mappings are variable and allow to generate different instances of the same task that only differ in color. }
+\label{tab:digit_coding}
+\end{table}
+
+
+The solution space consists of the 4 slots which have the same size as a cube and are arranged in a square from a top down view. In the initial state of the task the starting cube is already placed into the correct position in the solution space and the remaining 8 cubes are placed around the solution space. The remaining 8 cubes are rotated and positioned differently in each trial so that participants can not learn at which position the cubes for the solution are located (see Figure \ref{fig:vr_task_initialstate})
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{vr_task_initialstate}
+\caption{Initial state of the task: In the center - the solution space with the starting cube in light blue. Surrounding the solution space - the 9 remaining cubes to interact with. }
+\label{fig:vr_task_initialstate}
+\end{figure}
+
+The goal state of the task is achieved when all slots of the solution space are filled with a cube and all 6 faces of the resulting cuboid are colored differently but also unicolored each. \ref{fig:vr_task_goalstate})
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{vr_task_goalstate}
+\caption{Goal state of the task: All slots of the solution space are filled with a cube and all 6 faces of the resulting cuboid are differently colored but also unicolored each. }
+\label{fig:vr_task_goalstate}
+\end{figure}
+
+There are only 3 cubes that fit into a specific slot of the solution space in order to achieve the goal state. Those 3 cubes are the "goal cubes". The remaining 6 cubes are the "distractor cubes".
+
+\subsection{Task rules and limitations}
 
 
 \subsection{Task theory and tree structure}
+Another requirement of the task is, that is must be possible to be solved in a reasonable amount of time 
+
 restrctions? -> controlled
+
+20 predifined tasks -> every participant does same task just in different order
+
+The distractor cubes are colored in a way that they appear to fit into the goal state.
+
+gray black white -> only rotate on vertical axis
 
 Ideas behind the task design:	
 - very controlled: reduce the variation of how participants could solve the task
 - tree like solution path: 
 --four potential ways to traverse the tree in order to get to the solution
 --best case one traversion, worst case four traversions
---how many traversions participants need is random and not controlled, but it is possible to quantify how close participants were to one certain traversion path and the deviation from that can be defined as the error.
+--how many traversions participants need is random and not controlled, but it is possible to quantify how close participants were to one certain traversion path and the deviation from that can be defined as the error. (two times the same traversion = working memory error)
 
 goal of task -> participants must optimize the way they apply the given strategy
 \subsection{Implications for problem solving}
