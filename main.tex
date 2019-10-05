@@ -87,7 +87,7 @@ The cube faces can have 9 different colors and therefore the digit coding has be
 \label{tab:digit_coding}
 \end{table}
 
-After taking a closer look at Table \ref{tab:digit_coding} one can see that 0, 7 and 8 are represented in each cube. This is because we made certain simplifications for the task in order to classify it as a simple problem. The digit 0 is always mapped to gray because we define gray as the faces 
+After taking a closer look at Table \ref{tab:digit_coding} one can see that 0, 7 and 8 are represented in each cube. This is because we made certain simplifications for the task in order to classify it as a simple problem. The digit 0 is always mapped to gray because gray is defined to be the color of the faces that must face to the inside of the solution space. The digit 7 is always mapped to white because it defines the top of each cube in the solution space. And the digit 8 is always mapped to black because it defines the bottom of each cube in the solution space. Therefore the top and bottom of the solution space are the same in each trial (white and black). Only the colors of the side faces change between trials. For the complete overview of predefined and variable colors refer to Table \ref{tab:color_mapping}.
 
 \begin{table}
 \begin{center}
@@ -105,16 +105,15 @@ After taking a closer look at Table \ref{tab:digit_coding} one can see that 0, 7
     8 & black \\ \hline
     \end{tabular}
 \end{center}
-\caption{Color mapping for digit codes. 0, 7 and 8 are always mapped to gray, black and white are because they do not change between trials. All other mappings are variable and allow to generate different instances of the same task that only differ in color. }
-\label{tab:digit_coding}
+\caption{Predefined and variable colors for digit codes. The digit codes 0, 7 and 8 are always represent gray, black and white are because they do not change between trials. All other digit codes can represent variable colors and therefore allow to generate different instances of the same task that only differ in color. }
+\label{tab:color_mapping}
 \end{table}
-
 
 The solution space consists of the 4 slots which have the same size as a cube and are arranged in a square from a top down view. In the initial state of the task the starting cube is already placed into the correct position in the solution space and the remaining 8 cubes are placed around the solution space. The remaining 8 cubes are rotated and positioned differently in each trial so that participants can not learn at which position the cubes for the solution are located (see Figure \ref{fig:vr_task_initialstate})
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.75\textwidth]{vr_task_initialstate}
+\includegraphics[width=0.5\textwidth]{vr_task_initialstate}
 \caption{Initial state of the task: In the center - the solution space with the starting cube in light blue. Surrounding the solution space - the 9 remaining cubes to interact with. }
 \label{fig:vr_task_initialstate}
 \end{figure}
@@ -128,7 +127,7 @@ The goal state of the task is achieved when all slots of the solution space are 
 \label{fig:vr_task_goalstate}
 \end{figure}
 
-There are only 3 cubes that fit into a specific slot of the solution space in order to achieve the goal state. Those 3 cubes are the "goal cubes". The remaining 6 cubes are the "distractor cubes".
+There are only 3 cubes that fit into a specific slot of the solution space in order to achieve the goal state. Those 3 cubes will be referred to from now as the "goal cubes". The remaining 6 cubes will be referred to as the "distractor cubes".
 
 \subsection{Task rules and limitations}
 
